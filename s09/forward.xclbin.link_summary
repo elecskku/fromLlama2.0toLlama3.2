@@ -1,0 +1,1193 @@
+<ENTRY>
+{
+ "thisFile": "/home/fpga/onlytoday/7.11/s09/hls_component/forward.xclbin.link_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Sun Jul 12 04:22:04 2026",
+ "timestampMillis": "1783797724740",
+ "buildStep": {
+  "cmdId": "724f93a9-e4dd-499c-916e-09135e9a6eac",
+  "name": "v++",
+  "logFile": "/home/fpga/onlytoday/_x/link/link.steps.log",
+  "commandLine": "/tools/2025.2/Vitis/bin/unwrapped/lnx64.o/v++  --vivado.prop \"run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" --link --target hw --platform /home/fpga/onlytoday/6.15/platform1/export/platform1/platform1.xpfm --input_files /home/fpga/onlytoday/7.11/s09/hls_component/forward/forward.xo --output /home/fpga/onlytoday/7.11/s09/hls_component/forward.xclbin ",
+  "args": [
+   "--link",
+   "--target",
+   "hw",
+   "--platform",
+   "/home/fpga/onlytoday/6.15/platform1/export/platform1/platform1.xpfm",
+   "--input_files",
+   "/home/fpga/onlytoday/7.11/s09/hls_component/forward/forward.xo",
+   "--output",
+   "/home/fpga/onlytoday/7.11/s09/hls_component/forward.xclbin"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/fpga/onlytoday"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Jul 12 04:22:04 2026",
+ "timestampMillis": "1783797724741",
+ "status": {
+  "cmdId": "724f93a9-e4dd-499c-916e-09135e9a6eac",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Sun Jul 12 04:22:06 2026",
+ "timestampMillis": "1783797726758",
+ "buildSummary": {
+  "hardwarePlatform": "platform1.xpfm",
+  "hardwareDsa": "opt2.xsa",
+  "platformDirectory": "/home/fpga/onlytoday/6.15/platform1/export/platform1",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_LINK",
+  "target": "TT_HW",
+  "binaryContainer": {
+   "base": {
+    "type": "BT_UKNOWN",
+    "name": "forward",
+    "file": "/home/fpga/onlytoday/7.11/s09/hls_component/forward.xclbin",
+    "reports": [],
+    "uuid": ""
+   },
+   "kernels": []
+  },
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "forward",
+     "file": "/home/fpga/onlytoday/7.11/s09/hls_component/forward/forward.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/fpga/onlytoday/_x/link/int/xo/forward/forward/cpu_sources/typedefs.h",
+     "/home/fpga/onlytoday/_x/link/int/xo/forward/forward/cpu_sources/testbench.cpp",
+     "/home/fpga/onlytoday/_x/link/int/xo/forward/forward/cpu_sources/softmax.h",
+     "/home/fpga/onlytoday/_x/link/int/xo/forward/forward/cpu_sources/rmsnorm.h",
+     "/home/fpga/onlytoday/_x/link/int/xo/forward/forward/cpu_sources/matmul.h",
+     "/home/fpga/onlytoday/_x/link/int/xo/forward/forward/cpu_sources/lut_data.h",
+     "/home/fpga/onlytoday/_x/link/int/xo/forward/forward/cpu_sources/forward.h",
+     "/home/fpga/onlytoday/_x/link/int/xo/forward/forward/cpu_sources/forward.cpp",
+     "/home/fpga/onlytoday/_x/link/int/xo/forward/forward/cpu_sources/config.h"
+    ],
+    "psSources": [],
+    "cuNames": [
+     "forward_1"
+    ],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "Vitis V++ Compiler Release 2025.2. SW Build 6295257 on 2025-11-13-01:29:13"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Jul 12 04:22:06 2026",
+ "timestampMillis": "1783797726763",
+ "report": {
+  "path": "/home/fpga/onlytoday/analyzer_input/analyzer_summary.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "AIE_ANALYZE_METADATA",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sun Jul 12 04:22:06 2026",
+ "timestampMillis": "1783797726802",
+ "buildStep": {
+  "cmdId": "d98f1e45-b1e7-44ea-a22f-98545d36e84d",
+  "name": "system_link",
+  "logFile": "",
+  "commandLine": "system_link --xo /home/fpga/onlytoday/7.11/s09/hls_component/forward/forward.xo --xpfm /home/fpga/onlytoday/6.15/platform1/export/platform1/platform1.xpfm --target hw --output_dir /home/fpga/onlytoday/_x/link/int --temp_dir /home/fpga/onlytoday/_x/link/sys_link",
+  "args": [
+   "--xo",
+   "/home/fpga/onlytoday/7.11/s09/hls_component/forward/forward.xo",
+   "--xpfm",
+   "/home/fpga/onlytoday/6.15/platform1/export/platform1/platform1.xpfm",
+   "--target",
+   "hw",
+   "--output_dir",
+   "/home/fpga/onlytoday/_x/link/int",
+   "--temp_dir",
+   "/home/fpga/onlytoday/_x/link/sys_link"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/fpga/onlytoday"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Jul 12 04:22:06 2026",
+ "timestampMillis": "1783797726803",
+ "status": {
+  "cmdId": "d98f1e45-b1e7-44ea-a22f-98545d36e84d",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Jul 12 04:22:12 2026",
+ "timestampMillis": "1783797732010",
+ "status": {
+  "cmdId": "d98f1e45-b1e7-44ea-a22f-98545d36e84d",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sun Jul 12 04:22:12 2026",
+ "timestampMillis": "1783797732015",
+ "buildStep": {
+  "cmdId": "bac3ab7c-9020-403c-909d-8fa300629bd0",
+  "name": "cf2sw",
+  "logFile": "",
+  "commandLine": "cf2sw -sdsl /home/fpga/onlytoday/_x/link/int/sdsl.dat -rtd /home/fpga/onlytoday/_x/link/int/cf2sw.rtd -nofilter /home/fpga/onlytoday/_x/link/int/cf2sw_full.rtd -xclbin /home/fpga/onlytoday/_x/link/int/xclbin_orig.xml -o /home/fpga/onlytoday/_x/link/int/xclbin_orig.1.xml",
+  "args": [
+   "-sdsl",
+   "/home/fpga/onlytoday/_x/link/int/sdsl.dat",
+   "-rtd",
+   "/home/fpga/onlytoday/_x/link/int/cf2sw.rtd",
+   "-nofilter",
+   "/home/fpga/onlytoday/_x/link/int/cf2sw_full.rtd",
+   "-xclbin",
+   "/home/fpga/onlytoday/_x/link/int/xclbin_orig.xml",
+   "-o",
+   "/home/fpga/onlytoday/_x/link/int/xclbin_orig.1.xml"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/fpga/onlytoday"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Jul 12 04:22:12 2026",
+ "timestampMillis": "1783797732016",
+ "status": {
+  "cmdId": "bac3ab7c-9020-403c-909d-8fa300629bd0",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Jul 12 04:22:13 2026",
+ "timestampMillis": "1783797733291",
+ "status": {
+  "cmdId": "bac3ab7c-9020-403c-909d-8fa300629bd0",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sun Jul 12 04:22:13 2026",
+ "timestampMillis": "1783797733296",
+ "buildStep": {
+  "cmdId": "c4b25c9a-e96f-4f37-8e73-97f97728c93c",
+  "name": "rtd2_system_diagram",
+  "logFile": "",
+  "commandLine": "rtd2SystemDiagram",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/fpga/onlytoday"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Jul 12 04:22:13 2026",
+ "timestampMillis": "1783797733297",
+ "status": {
+  "cmdId": "c4b25c9a-e96f-4f37-8e73-97f97728c93c",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Jul 12 04:22:13 2026",
+ "timestampMillis": "1783797733363",
+ "report": {
+  "path": "/home/fpga/onlytoday/_x/link/int/systemDiagramModel.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "SYSTEM_DIAGRAM",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Jul 12 04:22:13 2026",
+ "timestampMillis": "1783797733364",
+ "status": {
+  "cmdId": "c4b25c9a-e96f-4f37-8e73-97f97728c93c",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sun Jul 12 04:22:13 2026",
+ "timestampMillis": "1783797733368",
+ "buildStep": {
+  "cmdId": "4696a854-f168-4cd3-9120-6fae192b5c01",
+  "name": "vpl",
+  "logFile": "",
+  "commandLine": "vpl -t hw -f /home/fpga/onlytoday/6.15/platform1/export/platform1/platform1.xpfm --remote_ip_cache /home/fpga/onlytoday/.ipcache --output_dir /home/fpga/onlytoday/_x/link/int --log_dir /home/fpga/onlytoday/_x/logs/link --report_dir /home/fpga/onlytoday/_x/reports/link --config /home/fpga/onlytoday/_x/link/int/vplConfig.ini -k /home/fpga/onlytoday/_x/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /home/fpga/onlytoday/_x/link --no-info --iprepo /home/fpga/onlytoday/_x/link/int/xo/ip_repo/xilinx_com_hls_forward_1_0 --messageDb /home/fpga/onlytoday/_x/link/run_link/vpl.pb /home/fpga/onlytoday/_x/link/int/dr.bd.tcl",
+  "args": [
+   "-t",
+   "hw",
+   "-f",
+   "/home/fpga/onlytoday/6.15/platform1/export/platform1/platform1.xpfm",
+   "--remote_ip_cache",
+   "/home/fpga/onlytoday/.ipcache",
+   "--output_dir",
+   "/home/fpga/onlytoday/_x/link/int",
+   "--log_dir",
+   "/home/fpga/onlytoday/_x/logs/link",
+   "--report_dir",
+   "/home/fpga/onlytoday/_x/reports/link",
+   "--config",
+   "/home/fpga/onlytoday/_x/link/int/vplConfig.ini",
+   "-k",
+   "/home/fpga/onlytoday/_x/link/int/kernel_info.dat",
+   "--webtalk_flag",
+   "Vitis",
+   "--temp_dir",
+   "/home/fpga/onlytoday/_x/link",
+   "--no-info",
+   "--iprepo",
+   "/home/fpga/onlytoday/_x/link/int/xo/ip_repo/xilinx_com_hls_forward_1_0",
+   "--messageDb",
+   "/home/fpga/onlytoday/_x/link/run_link/vpl.pb",
+   "/home/fpga/onlytoday/_x/link/int/dr.bd.tcl"
+  ],
+  "iniFiles": [
+   {
+    "path": "/home/fpga/onlytoday/_x/link/int/vplConfig.ini",
+    "content": "[advanced]\nmisc=report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\nmisc=report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\nparam=compiler.enablePerformanceTrace=1\nparam=compiler.vppCurrentWorkingDir=/home/fpga/onlytoday\nmisc=BinaryName=forward\n\n[connectivity]\nnk=forward:1:forward_1\n\n[vivado]\nprop=run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\n\n"
+   }
+  ],
+  "cwd": "/home/fpga/onlytoday"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Jul 12 04:22:13 2026",
+ "timestampMillis": "1783797733369",
+ "status": {
+  "cmdId": "4696a854-f168-4cd3-9120-6fae192b5c01",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Sun Jul 12 04:22:14 2026",
+ "timestampMillis": "1783797734675",
+ "buildStep": {
+  "cmdId": "36ff7c1c-78ca-4323-9272-4ae55404361b",
+  "name": "vpl",
+  "logFile": "/home/fpga/onlytoday/_x/link/link.steps.log",
+  "commandLine": "/tools/2025.2/Vitis/bin/unwrapped/lnx64.o/vpl -t hw -f /home/fpga/onlytoday/6.15/platform1/export/platform1/platform1.xpfm --remote_ip_cache /home/fpga/onlytoday/.ipcache --output_dir /home/fpga/onlytoday/_x/link/int --log_dir /home/fpga/onlytoday/_x/logs/link --report_dir /home/fpga/onlytoday/_x/reports/link --config /home/fpga/onlytoday/_x/link/int/vplConfig.ini -k /home/fpga/onlytoday/_x/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /home/fpga/onlytoday/_x/link --no-info --iprepo /home/fpga/onlytoday/_x/link/int/xo/ip_repo/xilinx_com_hls_forward_1_0 --messageDb /home/fpga/onlytoday/_x/link/run_link/vpl.pb /home/fpga/onlytoday/_x/link/int/dr.bd.tcl ",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/fpga/onlytoday/_x/link/run_link"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Jul 12 04:22:14 2026",
+ "timestampMillis": "1783797734675",
+ "status": {
+  "cmdId": "36ff7c1c-78ca-4323-9272-4ae55404361b",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_VivadoProject",
+ "dateTimestamp": "Sun Jul 12 04:22:14 2026",
+ "timestampMillis": "1783797734903",
+ "vivadoProject": {
+  "openDir": "/home/fpga/onlytoday/_x/link/vivado/vpl",
+  "openScript": "openprj.tcl",
+  "relativeProject": "prj/prj.xpr"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sun Jul 12 04:22:14 2026",
+ "timestampMillis": "1783797734904",
+ "buildStep": {
+  "cmdId": "a71a7017-2205-4f00-8121-a03726034b9b",
+  "name": "vivado",
+  "logFile": "/home/fpga/onlytoday/_x/link/vivado/vpl/vivado.log",
+  "commandLine": "vivado -log vivado.log -applog -m64 -messageDb vivado.pb -mode batch -source vpl.tcl -notrace",
+  "args": [
+   "-log",
+   "vivado.log",
+   "-applog",
+   " -m64",
+   "-messageDb",
+   "vivado.pb",
+   "-mode",
+   "batch",
+   "-source",
+   "vpl.tcl",
+   "-notrace"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/fpga/onlytoday/_x/link/run_link"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Jul 12 04:22:14 2026",
+ "timestampMillis": "1783797734905",
+ "status": {
+  "cmdId": "a71a7017-2205-4f00-8121-a03726034b9b",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Jul 12 04:22:42 2026",
+ "timestampMillis": "1783797762937",
+ "report": {
+  "path": "/home/fpga/onlytoday/_x/link/int/automation_summary_pre_synthesis.txt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "VITIS_DESIGN_FLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Sun Jul 12 04:28:50 2026",
+ "timestampMillis": "1783798130405",
+ "buildStep": {
+  "cmdId": "1ead41df-b47c-45c7-b763-55ef35e27ba0",
+  "name": "vivado.impl",
+  "logFile": "",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/fpga/onlytoday/_x/link/vivado/vpl"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Jul 12 04:28:50 2026",
+ "timestampMillis": "1783798130406",
+ "status": {
+  "cmdId": "1ead41df-b47c-45c7-b763-55ef35e27ba0",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Sun Jul 12 04:28:50 2026",
+ "timestampMillis": "1783798130407",
+ "buildStep": {
+  "cmdId": "dd1eb2e4-26c0-4a8a-9d48-ecdd6633f118",
+  "name": "vivado.impl.impl_1",
+  "logFile": "/home/fpga/onlytoday/_x/link/vivado/vpl/prj/prj.runs/impl_1/runme.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/fpga/onlytoday/_x/link/vivado/vpl/prj/prj.runs/impl_1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Jul 12 04:28:50 2026",
+ "timestampMillis": "1783798130408",
+ "status": {
+  "cmdId": "dd1eb2e4-26c0-4a8a-9d48-ecdd6633f118",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Jul 12 04:39:31 2026",
+ "timestampMillis": "1783798771186",
+ "report": {
+  "path": "/home/fpga/onlytoday/_x/link/vivado/vpl/prj/prj.runs/impl_1/system_diagram.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "SYSTEM_DIAGRAM_PLUS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Jul 12 04:39:37 2026",
+ "timestampMillis": "1783798777914",
+ "report": {
+  "path": "/home/fpga/onlytoday/_x/link/int/kernel_service.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "KERNEL_SERVICE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Jul 12 04:39:37 2026",
+ "timestampMillis": "1783798777916",
+ "report": {
+  "path": "/home/fpga/onlytoday/_x/link/int/kernel_service.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "KERNEL_SERVICE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Jul 12 04:40:28 2026",
+ "timestampMillis": "1783798828065",
+ "status": {
+  "cmdId": "a71a7017-2205-4f00-8121-a03726034b9b",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Jul 12 04:40:28 2026",
+ "timestampMillis": "1783798828077",
+ "report": {
+  "path": "/home/fpga/onlytoday/_x/reports/link/imp/impl_1_kernel_util_synthed.xutil",
+  "name": "",
+  "fileType": "XUTIL",
+  "reportType": "KERNEL_UTILIZATION_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Jul 12 04:40:28 2026",
+ "timestampMillis": "1783798828078",
+ "report": {
+  "path": "/home/fpga/onlytoday/_x/reports/link/imp/impl_1_kernel_util_synthed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "KERNEL_UTILIZATION_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Jul 12 04:40:28 2026",
+ "timestampMillis": "1783798828079",
+ "report": {
+  "path": "/home/fpga/onlytoday/_x/reports/link/imp/impl_1_full_util_synthed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_UTILIZATION_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Jul 12 04:40:28 2026",
+ "timestampMillis": "1783798828080",
+ "report": {
+  "path": "/home/fpga/onlytoday/_x/reports/link/imp/impl_1_full_util_synthed.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_UTILIZATION_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Jul 12 04:40:28 2026",
+ "timestampMillis": "1783798828081",
+ "report": {
+  "path": "/home/fpga/onlytoday/_x/reports/link/imp/impl_1_kernel_util_placed.xutil",
+  "name": "",
+  "fileType": "XUTIL",
+  "reportType": "KERNEL_UTILIZATION_PLACEMENT",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Jul 12 04:40:28 2026",
+ "timestampMillis": "1783798828082",
+ "report": {
+  "path": "/home/fpga/onlytoday/_x/reports/link/imp/impl_1_kernel_util_placed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "KERNEL_UTILIZATION_PLACEMENT",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Jul 12 04:40:28 2026",
+ "timestampMillis": "1783798828083",
+ "report": {
+  "path": "/home/fpga/onlytoday/_x/reports/link/imp/impl_1_slr_util_placed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_SLR_UTIL_PLACED",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Jul 12 04:40:28 2026",
+ "timestampMillis": "1783798828085",
+ "report": {
+  "path": "/home/fpga/onlytoday/_x/reports/link/imp/impl_1_slr_util_placed.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_SLR_UTIL_PLACED",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Jul 12 04:40:28 2026",
+ "timestampMillis": "1783798828086",
+ "report": {
+  "path": "/home/fpga/onlytoday/_x/reports/link/imp/impl_1_full_util_placed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_UTILIZATION_PLACEMENT",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Jul 12 04:40:28 2026",
+ "timestampMillis": "1783798828087",
+ "report": {
+  "path": "/home/fpga/onlytoday/_x/reports/link/imp/impl_1_full_util_placed.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_UTILIZATION_PLACEMENT",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Jul 12 04:40:28 2026",
+ "timestampMillis": "1783798828087",
+ "report": {
+  "path": "/home/fpga/onlytoday/_x/reports/link/imp/impl_1_kernel_util_routed.xutil",
+  "name": "",
+  "fileType": "XUTIL",
+  "reportType": "KERNEL_UTILIZATION_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Jul 12 04:40:28 2026",
+ "timestampMillis": "1783798828088",
+ "report": {
+  "path": "/home/fpga/onlytoday/_x/reports/link/imp/impl_1_kernel_util_routed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "KERNEL_UTILIZATION_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Jul 12 04:40:28 2026",
+ "timestampMillis": "1783798828089",
+ "report": {
+  "path": "/home/fpga/onlytoday/_x/reports/link/imp/impl_1_slr_util_routed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_SLR_UTIL_ROUTED",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Jul 12 04:40:28 2026",
+ "timestampMillis": "1783798828090",
+ "report": {
+  "path": "/home/fpga/onlytoday/_x/reports/link/imp/impl_1_slr_util_routed.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_SLR_UTIL_ROUTED",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Jul 12 04:40:28 2026",
+ "timestampMillis": "1783798828091",
+ "report": {
+  "path": "/home/fpga/onlytoday/_x/reports/link/imp/impl_1_full_util_routed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_UTILIZATION_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Jul 12 04:40:28 2026",
+ "timestampMillis": "1783798828092",
+ "report": {
+  "path": "/home/fpga/onlytoday/_x/reports/link/imp/impl_1_full_util_routed.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_UTILIZATION_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Jul 12 04:40:28 2026",
+ "timestampMillis": "1783798828093",
+ "report": {
+  "path": "/home/fpga/onlytoday/_x/reports/link/syn/design_1_forward_1_0_synth_1_design_1_forward_1_0_utilization_synth.rpt",
+  "name": "forward",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Jul 12 04:40:28 2026",
+ "timestampMillis": "1783798828094",
+ "report": {
+  "path": "/home/fpga/onlytoday/_x/reports/link/imp/impl_1_system_diagram.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "SYSTEM_DIAGRAM_PLUS",
+  "cmdId": "dd1eb2e4-26c0-4a8a-9d48-ecdd6633f118"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Jul 12 04:40:28 2026",
+ "timestampMillis": "1783798828095",
+ "report": {
+  "path": "/home/fpga/onlytoday/_x/reports/link/imp/impl_1_design_1_wrapper_timing_summary_routed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_TIMING_SUMMARY",
+  "cmdId": "dd1eb2e4-26c0-4a8a-9d48-ecdd6633f118"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Jul 12 04:40:28 2026",
+ "timestampMillis": "1783798828096",
+ "report": {
+  "path": "/home/fpga/onlytoday/_x/reports/link/imp/impl_1_design_1_wrapper_timing_summary_routed.rpx",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_REPORT_TIMING_SUMMARY",
+  "cmdId": "dd1eb2e4-26c0-4a8a-9d48-ecdd6633f118"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Jul 12 04:40:28 2026",
+ "timestampMillis": "1783798828155",
+ "status": {
+  "cmdId": "36ff7c1c-78ca-4323-9272-4ae55404361b",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Jul 12 04:40:28 2026",
+ "timestampMillis": "1783798828193",
+ "status": {
+  "cmdId": "4696a854-f168-4cd3-9120-6fae192b5c01",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sun Jul 12 04:40:28 2026",
+ "timestampMillis": "1783798828197",
+ "buildStep": {
+  "cmdId": "5870aae5-79eb-45c0-97d7-355dbb2be622",
+  "name": "rtdgen",
+  "logFile": "",
+  "commandLine": "rtdgen",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/fpga/onlytoday"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Jul 12 04:40:28 2026",
+ "timestampMillis": "1783798828198",
+ "status": {
+  "cmdId": "5870aae5-79eb-45c0-97d7-355dbb2be622",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Jul 12 04:40:28 2026",
+ "timestampMillis": "1783798828200",
+ "report": {
+  "path": "/home/fpga/onlytoday/_x/link/int/forward_xml.rtd",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "XCLBIN_INFO",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sun Jul 12 04:40:28 2026",
+ "timestampMillis": "1783798828202",
+ "buildStep": {
+  "cmdId": "f25d9e48-3cf5-4c87-816d-0b9230d9b340",
+  "name": "cf2sw",
+  "logFile": "",
+  "commandLine": "cf2sw -a /home/fpga/onlytoday/_x/link/int/address_map.xml -sdsl /home/fpga/onlytoday/_x/link/int/sdsl.dat -xclbin /home/fpga/onlytoday/_x/link/int/xclbin_orig.xml -rtd /home/fpga/onlytoday/_x/link/int/forward.rtd -o /home/fpga/onlytoday/_x/link/int/forward.xml",
+  "args": [
+   "-a",
+   "/home/fpga/onlytoday/_x/link/int/address_map.xml",
+   "-sdsl",
+   "/home/fpga/onlytoday/_x/link/int/sdsl.dat",
+   "-xclbin",
+   "/home/fpga/onlytoday/_x/link/int/xclbin_orig.xml",
+   "-rtd",
+   "/home/fpga/onlytoday/_x/link/int/forward.rtd",
+   "-o",
+   "/home/fpga/onlytoday/_x/link/int/forward.xml"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/fpga/onlytoday"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Jul 12 04:40:28 2026",
+ "timestampMillis": "1783798828203",
+ "status": {
+  "cmdId": "f25d9e48-3cf5-4c87-816d-0b9230d9b340",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Jul 12 04:40:29 2026",
+ "timestampMillis": "1783798829489",
+ "status": {
+  "cmdId": "f25d9e48-3cf5-4c87-816d-0b9230d9b340",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sun Jul 12 04:40:29 2026",
+ "timestampMillis": "1783798829492",
+ "buildStep": {
+  "cmdId": "92275331-470f-4c29-b785-9981da66f499",
+  "name": "rtdgen",
+  "logFile": "",
+  "commandLine": "writeSystemDiagram",
+  "args": [
+   "/home/fpga/onlytoday/_x/link/int/forward.rtd",
+   "/home/fpga/onlytoday/_x/link/int/systemDiagramModelSlrBaseAddress.json"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/fpga/onlytoday"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Jul 12 04:40:29 2026",
+ "timestampMillis": "1783798829493",
+ "status": {
+  "cmdId": "92275331-470f-4c29-b785-9981da66f499",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Jul 12 04:40:29 2026",
+ "timestampMillis": "1783798829498",
+ "report": {
+  "path": "/home/fpga/onlytoday/_x/link/int/systemDiagramModelSlrBaseAddress.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "SYSTEM_DIAGRAM_PLUS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Jul 12 04:40:29 2026",
+ "timestampMillis": "1783798829498",
+ "status": {
+  "cmdId": "92275331-470f-4c29-b785-9981da66f499",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sun Jul 12 04:40:29 2026",
+ "timestampMillis": "1783798829499",
+ "buildStep": {
+  "cmdId": "6abb6879-1425-4b95-92a7-ca851a0e62c8",
+  "name": "rtdgen",
+  "logFile": "",
+  "commandLine": "writeAutomationSummary",
+  "args": [
+   "/home/fpga/onlytoday/_x/link/int/automation_summary.txt"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/fpga/onlytoday"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Jul 12 04:40:29 2026",
+ "timestampMillis": "1783798829500",
+ "status": {
+  "cmdId": "6abb6879-1425-4b95-92a7-ca851a0e62c8",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Jul 12 04:40:29 2026",
+ "timestampMillis": "1783798829500",
+ "report": {
+  "path": "/home/fpga/onlytoday/_x/link/int/automation_summary.txt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "VITIS_DESIGN_FLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Jul 12 04:40:29 2026",
+ "timestampMillis": "1783798829501",
+ "status": {
+  "cmdId": "6abb6879-1425-4b95-92a7-ca851a0e62c8",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Jul 12 04:40:29 2026",
+ "timestampMillis": "1783798829502",
+ "status": {
+  "cmdId": "5870aae5-79eb-45c0-97d7-355dbb2be622",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sun Jul 12 04:40:29 2026",
+ "timestampMillis": "1783798829505",
+ "buildStep": {
+  "cmdId": "e05a937e-1524-40fe-be82-ab203bc9c934",
+  "name": "xclbinutil",
+  "logFile": "",
+  "commandLine": "xclbinutil --add-section BITSTREAM:RAW:/home/fpga/onlytoday/_x/link/int/system.bit --force --target hw --key-value SYS:dfx_enable:false --add-section :JSON:/home/fpga/onlytoday/_x/link/int/forward.rtd --add-section CLOCK_FREQ_TOPOLOGY:JSON:/home/fpga/onlytoday/_x/link/int/forward_xml.rtd --add-section BUILD_METADATA:JSON:/home/fpga/onlytoday/_x/link/int/forward_build.rtd --add-section EMBEDDED_METADATA:RAW:/home/fpga/onlytoday/_x/link/int/forward.xml --add-section SYSTEM_METADATA:RAW:/home/fpga/onlytoday/_x/link/int/systemDiagramModelSlrBaseAddress.json --key-value SYS:PlatformVBNV:xilinx_kv260_som_opt2_0_0 --output /home/fpga/onlytoday/7.11/s09/hls_component/forward.xclbin",
+  "args": [
+   "--add-section",
+   "BITSTREAM:RAW:/home/fpga/onlytoday/_x/link/int/system.bit",
+   "--force",
+   "--target",
+   "hw",
+   "--key-value",
+   "SYS:dfx_enable:false",
+   "--add-section",
+   ":JSON:/home/fpga/onlytoday/_x/link/int/forward.rtd",
+   "--add-section",
+   "CLOCK_FREQ_TOPOLOGY:JSON:/home/fpga/onlytoday/_x/link/int/forward_xml.rtd",
+   "--add-section",
+   "BUILD_METADATA:JSON:/home/fpga/onlytoday/_x/link/int/forward_build.rtd",
+   "--add-section",
+   "EMBEDDED_METADATA:RAW:/home/fpga/onlytoday/_x/link/int/forward.xml",
+   "--add-section",
+   "SYSTEM_METADATA:RAW:/home/fpga/onlytoday/_x/link/int/systemDiagramModelSlrBaseAddress.json",
+   "--key-value",
+   "SYS:PlatformVBNV:xilinx_kv260_som_opt2_0_0",
+   "--output",
+   "/home/fpga/onlytoday/7.11/s09/hls_component/forward.xclbin"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/fpga/onlytoday"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Jul 12 04:40:29 2026",
+ "timestampMillis": "1783798829506",
+ "status": {
+  "cmdId": "e05a937e-1524-40fe-be82-ab203bc9c934",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Jul 12 04:40:29 2026",
+ "timestampMillis": "1783798829746",
+ "status": {
+  "cmdId": "e05a937e-1524-40fe-be82-ab203bc9c934",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sun Jul 12 04:40:29 2026",
+ "timestampMillis": "1783798829750",
+ "buildStep": {
+  "cmdId": "c9ccd530-aad7-4e13-b3ce-f08053c2ea6d",
+  "name": "xclbinutilinfo",
+  "logFile": "",
+  "commandLine": "xclbinutil --quiet --force --info /home/fpga/onlytoday/7.11/s09/hls_component/forward.xclbin.info --input /home/fpga/onlytoday/7.11/s09/hls_component/forward.xclbin",
+  "args": [
+   "--quiet",
+   "--force",
+   "--info",
+   "/home/fpga/onlytoday/7.11/s09/hls_component/forward.xclbin.info",
+   "--input",
+   "/home/fpga/onlytoday/7.11/s09/hls_component/forward.xclbin"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/fpga/onlytoday"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Jul 12 04:40:29 2026",
+ "timestampMillis": "1783798829750",
+ "status": {
+  "cmdId": "c9ccd530-aad7-4e13-b3ce-f08053c2ea6d",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Jul 12 04:40:30 2026",
+ "timestampMillis": "1783798830007",
+ "status": {
+  "cmdId": "c9ccd530-aad7-4e13-b3ce-f08053c2ea6d",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Jul 12 04:40:30 2026",
+ "timestampMillis": "1783798830017",
+ "report": {
+  "path": "/home/fpga/onlytoday/_x/logs/optraceViewer.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "OPERATION_TRACE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Jul 12 04:40:30 2026",
+ "timestampMillis": "1783798830018",
+ "status": {
+  "cmdId": "724f93a9-e4dd-499c-916e-09135e9a6eac",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Jul 12 04:40:30 2026",
+ "timestampMillis": "1783798830068",
+ "report": {
+  "path": "/home/fpga/onlytoday/_x/reports/link/v++_link_forward_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Jul 12 04:40:30 2026",
+ "timestampMillis": "1783798830069",
+ "report": {
+  "path": "/home/fpga/onlytoday/_x/v++_link_forward_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
